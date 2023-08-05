@@ -57,6 +57,8 @@ class SettingsActivity : AppCompatActivity() {
             dialog.dismiss()
         }
 
+        alertDialogBuilder.setCancelable(false)
+
         val alertDialog = alertDialogBuilder.create()
         alertDialog.show()
     }

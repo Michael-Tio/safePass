@@ -17,8 +17,8 @@ class SplashActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_splash)
-
         supportActionBar?.hide()
+        setFinishOnTouchOutside(false)
 
         val userPreference = UserPreferences(this)
         val locked = userPreference.getLockStatus()
@@ -56,6 +56,8 @@ class SplashActivity : AppCompatActivity() {
         alertDialogBuilder.setNegativeButton("Cancel") { dialog, _ ->
             dialog.dismiss()
         }
+
+        alertDialogBuilder.setCancelable(false)
 
         val alertDialog = alertDialogBuilder.create()
         alertDialog.show()
