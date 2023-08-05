@@ -53,8 +53,8 @@ class SplashActivity : AppCompatActivity() {
             }
         }
 
-        alertDialogBuilder.setNegativeButton("Cancel") { dialog, _ ->
-            dialog.dismiss()
+        alertDialogBuilder.setNegativeButton("Quit") { dialog, _ ->
+            finish()
         }
 
         alertDialogBuilder.setCancelable(false)
