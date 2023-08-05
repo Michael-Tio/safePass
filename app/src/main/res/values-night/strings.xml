@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="title_max_30_characters">Title (Max 30 characters)</string>
+    <string name="email_username_phone">Email / Username / Phone</string>
+    <string name="password">Password</string>
+    <string name="save_password">Save Password</string>
+    <string name="please_fill_the_title">Please fill the title</string>
+    <string name="please_fill_the_password">Please fill the password</string>
+    <string name="title">Title</string>
+    <string name="input_email_any_login_data_optional">Input email / any login data (Optional)</string>
+    <string name="input_your_password">Input your password</string>
+    <string name="title_0_30">Title (0/30)</string>
+    <string name="input_title">Input Title</string>
+    <string name="input_any_login_data_optional">Input any login data (Optional)</string>
+    <string name="save_changes">Save Changes</string>
+    <string name="show_password">Show Password</string>
+</resources>

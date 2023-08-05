@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.create.CreateActivity">
+
+  <TextView
+      android:id="@+id/txtHintTitle"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:layout_marginStart="32dp"
+      android:layout_marginTop="32dp"
+      android:text="@string/title_0_30"
+      app:layout_constraintStart_toStartOf="parent"
+      app:layout_constraintTop_toTopOf="parent" />
+
+  <TextView
+      android:id="@+id/textView2"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:layout_marginStart="32dp"
+      android:layout_marginTop="24dp"
+      android:text="@string/email_username_phone"
+      app:layout_constraintStart_toStartOf="parent"
+      app:layout_constraintTop_toBottomOf="@+id/txtCreateTitle" />
+
+  <TextView
+      android:id="@+id/textView3"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:layout_marginStart="32dp"
+      android:layout_marginTop="24dp"
+      android:text="@string/password"
+      app:layout_constraintStart_toStartOf="parent"
+      app:layout_constraintTop_toBottomOf="@+id/txtCreateEmail" />
+
+  <EditText
+      android:id="@+id/txtCreateTitle"
+      android:layout_width="0dp"
+      android:layout_height="50dp"
+      android:layout_marginStart="24dp"
+      android:layout_marginEnd="24dp"
+      android:background="@drawable/edittextbackground"
+      android:ems="10"
+      android:hint="@string/input_title"
+      android:inputType="text"
+      android:maxLength="30"
+      android:paddingStart="20dp"
+      android:paddingEnd="20dp"
+      app:layout_constraintEnd_toEndOf="parent"
+      app:layout_constraintStart_toStartOf="parent"
+      app:layout_constraintTop_toBottomOf="@+id/txtHintTitle" />
+
+  <EditText
+      android:id="@+id/txtCreateEmail"
+      android:layout_width="0dp"
+      android:layout_height="50dp"
+      android:layout_marginStart="24dp"
+      android:layout_marginEnd="24dp"
+      android:background="@drawable/edittextbackground"
+      android:ems="10"
+      android:hint="@string/input_any_login_data_optional"
+      android:inputType="text"
+      android:paddingStart="20dp"
+      android:paddingEnd="20dp"
+      app:layout_constraintEnd_toEndOf="parent"
+      app:layout_constraintStart_toStartOf="parent"
+      app:layout_constraintTop_toBottomOf="@+id/textView2" />
+
+  <EditText
+      android:id="@+id/txtCreatePass"
+      android:layout_width="0dp"
+      android:layout_height="50dp"
+      android:layout_marginStart="24dp"
+      android:layout_marginEnd="24dp"
+      android:background="@drawable/edittextbackground"
+      android:ems="10"
+      android:hint="@string/input_your_password"
+      android:inputType="textPassword"
+      android:paddingStart="20dp"
+      android:paddingEnd="20dp"
+      app:layout_constraintEnd_toEndOf="parent"
+      app:layout_constraintStart_toStartOf="parent"
+      app:layout_constraintTop_toBottomOf="@+id/textView3" />
+
+  <Button
+      android:id="@+id/btnSave"
+      android:layout_width="0dp"
+      android:layout_height="wrap_content"
+      android:layout_marginStart="32dp"
+      android:layout_marginTop="24dp"
+      android:layout_marginEnd="32dp"
+      android:text="@string/save_password"
+      app:layout_constraintEnd_toEndOf="parent"
+      app:layout_constraintStart_toStartOf="parent"
+      app:layout_constraintTop_toBottomOf="@+id/txtCreatePass" />
+</androidx.constraintlayout.widget.ConstraintLayout>
